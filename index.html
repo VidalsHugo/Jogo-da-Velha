@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jogo da Velha</title>
+</head>
+<body>
+    <!-- Corpo do jogo -->
+    <section id="section-game">
+        <div id="title">
+            <h1>Jogo da Velha</h1>
+        </div>
+        <!-- Botoes -->
+            <div id="buttons-container">
+                <div class="icon">
+                    <img src="imagens/player-versus-player.png" alt="2 Jogadores">
+                    <img src="imagens/player.png" alt="Contra IA" id="robot">
+                </div>
+                <button id="2-players">2 Jogadores</button>
+                <button id="IA-player">Contra IA</button>
+            </div>
+            <!-- Area do jogo(quadrados) -->
+            <div class="hide" id="container">
+                <section id="gameplay-container">
+                    <div class="box" id="box-1"></div>
+                    <div class="box" id="box-2"></div>
+                    <div class="box" id="box-3"></div>
+                    <div class="box" id="box-4"></div>
+                    <div class="box" id="box-5"></div>
+                    <div class="box" id="box-6"></div>
+                    <div class="box" id="box-7"></div>
+                    <div class="box" id="box-8"></div>
+                    <div class="box" id="box-9"></div>
+                </section>
+                <!-- Placar -->
+                <section id="placar">
+                    <h2>Placar:</h2>
+                    <div class="X-O">
+                        <span class="placar-box">
+                            <span id="placar-x">X</span>:
+                            <span id="score-1">0</span>
+                        </span>
+                        <span class="placar-box-2">
+                            <span id="placar-o"></span>:
+                            <span id="score-2">0</span>
+                        </span>
+                    </div>
+                </section>
+            </div>
+    </section>
+    <!-- X e O-->
+    <div class="hide">
+        <div class="x">X</div>
+        <div class="o"></div>
+    </div>
+    <!-- Mensagem após fim da partida -->
+    <div id="message" class="hide">
+        <p>TESTE</p>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
